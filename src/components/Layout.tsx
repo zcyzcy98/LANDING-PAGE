@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Navbar } from "./elements/Navbar";
-import { Footer } from "./elements/Footer";
+import { Navbar } from "@/components/elements/Navbar";
+// import { Footer } from "@/components/elements/Footer";
 
 interface LayoutProps {
   title: string;
@@ -17,7 +17,7 @@ export default function Layout({ title, children }: LayoutProps) {
       <main className="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
