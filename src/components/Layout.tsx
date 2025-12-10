@@ -10,7 +10,7 @@ interface LayoutProps {
 export default function Layout({ title, children }: LayoutProps) {
   useEffect(() => {
     document.title = title;
-  }, [title]);
+  },[title]);
   return (
     <div>
       <Navbar />
